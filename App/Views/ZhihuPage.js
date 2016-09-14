@@ -8,7 +8,8 @@ import {
     StyleSheet,
     ListView,
     RefreshControl,
-    Image
+    Image,
+    Platform
 } from 'react-native';
 
 import StoryCell from './StoryCell'
@@ -67,7 +68,6 @@ class ZhihuPage extends React.Component {
             }
         })
     }
-
     render() {
         if (!this.state.loaded && this.state.db.length === 0) {
             return (

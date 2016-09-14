@@ -10,6 +10,7 @@ import MainWindow from './App/Views/MainWindow';
 import GameStatsPage from './App/Views/GameStatsPage';
 import TeamStatsPage from './App/Views/TeamStatsPage';
 import IndividualPlayerPage from './App/Views/IndividualPlayerPage';
+import StoryDetailPage from './App/Views/StoryDetailPage';
 
 var STORE = require('./App/Utilities/Store');
 
@@ -22,6 +23,7 @@ class NBAreact extends React.Component {
           <Scene key='GameStats' component={GameStatsPage} hideNavBar={false} navigationBarStyle={styles.gameStatsPageTab} />
           <Scene key='TeamStats' component={TeamStatsPage} hideNavBar={false} navigationBarStyle={styles.teamPageTab} backButtonImage={require('./App/Assets/Images/back_button_white.png')}/>
           <Scene key='IndividualPlayerPage' component={IndividualPlayerPage} hideNavBar={false} navigationBarStyle={styles.playerTab} />
+          <Scene key='StoryDetail' component={StoryDetailPage} hideNavBar={false} navigationBarStyle={styles.playerTab} />
         </Scene>
       </Router>
     )
